@@ -14,57 +14,53 @@ public class Employees {
 	@Id
 	@GeneratedValue(strategy =GenerationType.IDENTITY)
 	@Column(name="employee_id")
-	private int employee_id;
+	private int employeeId;
 	
 	@Column(name="employee_name")
-	private String employee_name;
+	private String employeeName;
 	
 	@Column(name="employee_salary")
-	private float employee_salary;
+	private float employeeSalary;
 
 	public Employees() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public Employees(int employee_id, String employee_name, float employee_salary) {
+	public Employees(int employeeId, String employeeName, float employeeSalary) {
 		super();
-		this.employee_id = employee_id;
-		this.employee_name = employee_name;
-		this.employee_salary = employee_salary;
+		this.employeeId = employeeId;
+		this.employeeName = employeeName;
+		this.employeeSalary = employeeSalary;
 	}
 
-	public int getEmployee_id() {
-		return employee_id;
+	public int getEmployeeId() {
+		return employeeId;
 	}
 
-	public void setEmployee_id(int employee_id) {
-		this.employee_id = employee_id;
+	public void setEmployeeId(int employeeId) {
+		this.employeeId = employeeId;
 	}
 
-	public String getEmployee_name() {
-		return employee_name;
+	public String getEmployeeName() {
+		return employeeName;
 	}
 
-	public void setEmployee_name(String employee_name) {
-		this.employee_name = employee_name;
+	public void setEmployeeName(String employeeName) {
+		this.employeeName = employeeName;
 	}
 
-	public float getEmployee_salary() {
-		return employee_salary;
+	public float getEmployeeSalary() {
+		return employeeSalary;
 	}
 
-	public void setEmployee_salary(float employee_salary) {
-		this.employee_salary = employee_salary;
+	public void setEmployeeSalary(float employeeSalary) {
+		this.employeeSalary = employeeSalary;
 	}
 
 	@Override
 	public String toString() {
-		return "Employees [employee_id=" + employee_id + ", employee_name=" + employee_name + ", employee_salary="
-				+ employee_salary + "]";
+		return "Employees [employeeId=" + employeeId + ", employeeName=" + employeeName + ", employeeSalary="
+				+ employeeSalary + "]";
 	}
-	
-	
-	
-	
 }
